@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<title>Meters to cm Length Converter</title>
+<link rel="stylesheet" href="style.css">
+<body>
+
+<h2>Length Converter</h2>
+<p>Convert Meter to Centimeter</p>
+
+<p>
+  <label>Meters:</label>
+  <input id="inputMeters" type="number" placeholder="Meters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+
+<label>Centimeters:</label>
+<div class="demo">
+  <span id="outputcm"></span>
+</div>
+  
+    
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputcm").innerHTML=valNum/0.01;
+}
+</script>
+</body>
+</html>
